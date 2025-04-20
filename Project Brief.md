@@ -1,20 +1,20 @@
-# Project Brief: USSD-Enabled Pest & Disease Reporting System
+# Project Brief: 
 
-**Project Name:**  
-**AgriAlert** – USSD-Based Pest & Disease Early Warning and Advisory System
+#### - **Project Name:**  : AgriLert
+USSD-Based Pest & Disease Early Warning and Advisory System
 
 ## 1. ✅ Project Overview
 
-AgriAlert is a full-stack, USSD/SMS-enabled pest and disease reporting and advisory platform for smallholder farmers in rural regions. The system enables farmers to report crop health issues via SMS/USSD in local languages, while agricultural officers and experts can respond through a web-based dashboard with tailored advice or escalation protocols.
+AgriAlert is a USSD/SMS-enabled pest, disease reporting and advisory platform for smallholder farmers in rural regions. The system enables farmers to report crop health issues via SMS/USSD in local languages, while agricultural officers and experts can respond through a web-based dashboard with tailored advice or escalation protocols.
 
 ## 2. 🎯 Core Objectives
-
+Intends to :
 - Enable farmers with basic phones to report pest and disease incidents in real-time via USSD/SMS.
 - Log, analyse, and visualise these reports centrally for agricultural officers.
 - Automate responses using a knowledge base and send advisories via SMS.
 - Provide administrators with tools to track outbreaks geographically and temporally.
 
-## 3. 🧰 Tech Stack and System Architecture
+## 3. 🧰 Potential Tech Stack and Architecture
 
 | Layer               | Technology Used                 | Notes                               |
 |---------------------|---------------------------------|-------------------------------------|
@@ -39,14 +39,14 @@ AgriAlert is a full-stack, USSD/SMS-enabled pest and disease reporting and advis
 1. **Farmer** dials USSD code or sends SMS with crop issue.
 2. **SMS Gateway** hits the Node.js webhook endpoint.
 3. **Backend API** parses and stores the report.
-4. Automated SMS sent acknowledging the report and providing relevant guidance.
+4. **Automated SMS** acknowledged the report and provided relevant guidance.
 5. **Admin Dashboard** updates in real-time for officers to review and act on.
 
 ## 6. 🧑‍🌾 User Roles
 
 - **Farmers** (via USSD/SMS): Submit crop-related issues and receive tips.
 - **Agricultural Officers** (via Web): Monitor and respond to farmer issues.
-- **System Admins**: Manage officers, view metrics, edit knowledge base.
+- **System Admins**: Manage officers, view metrics, and edit the knowledge base.
 
 ## 7. 🔒 Security & Best Practices
 
@@ -92,15 +92,15 @@ AgriAlert is a full-stack, USSD/SMS-enabled pest and disease reporting and advis
 - An acknowledgement SMS is sent automatically.
 - The React dashboard reflects updates in real-time.
 Officers can respond through the UI, and personalised advisories are sent via SMS.
----
 
-## 📘 User Stories – AgriAlert: USSD/SMS-Based Pest & Disease Reporting System
----
 
-## 👨🏾‍🌾 Farmers (End Users)
+## 11. 📘 User Stories
+
+### 👨🏾‍🌾 Farmers (End Users)
 
 1. **USSD Access**  
-   As a farmer, I want to dial a short USSD code, so that I can report pest or disease issues from my basic mobile phone without internet access.
+   As a farmer, I want to dial a short USSD code, so that I can report pest or disease issues from my basic 
+   phone without internet access.
 2. **SMS-Based Reporting**  
    As a farmer, I want to send an SMS with a report, so that I can easily report issues in case I can’t use USSD.
 3. **Multi-Language Support**  
@@ -110,7 +110,6 @@ Officers can respond through the UI, and personalised advisories are sent via SM
 
 5. **Receive Advice**  
    As a farmer, I want to receive timely SMS feedback or advice from agricultural officers, so that I can take the correct action.
----
 
 ## 🧑🏽‍💼 Agricultural Officers
 
@@ -129,7 +128,6 @@ Officers can respond through the UI, and personalised advisories are sent via SM
 10. **Report Analytics**  
    As an agri officer, I want to generate a summary of reports by region, type, and response time, so that I can evaluate outreach effectiveness.
 
----
 
 ## 🛠️ Admin / System Administrator
 
@@ -144,8 +142,6 @@ Officers can respond through the UI, and personalised advisories are sent via SM
 
 14. **Set Notification Rules**  
    As an admin, I want to define SMS templates and alert thresholds, so that communication is consistent and automated.
-
----
 
 ## 👨🏽‍💻 Developers
 
@@ -166,8 +162,6 @@ Officers can respond through the UI, and personalised advisories are sent via SM
 
 20. **Security**  
    As a developer, I want to implement access control and input sanitisation to ensure the system's security.
-
----
 
 ## 📈 Optional / Future Enhancements
 
@@ -433,13 +427,13 @@ INSERT INTO message_logs (message_type, recipient_phone, content, status, sent_a
 ('sms', '+254722333444', 'Pest alert: check for signs on maize.', 'queued', NULL);
 
 ```
-## ✅ Approval Request
 
 This project aligns with our mission to empower farmers with practical tools using accessible technology. We seek your approval to begin development with a phased rollout. All code will follow best practices, and documentation will be provided.
----
-**Submitted By:**  
+
+
+##### **Submitted By:**  
 Benjamin Ohene-Adu 
-**Date:**  
+##### **Date:**  
 14th April 2025
 
 
