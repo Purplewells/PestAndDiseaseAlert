@@ -1,6 +1,5 @@
 
-## 📘 User Stories – AgriAlert: USSD/SMS-Based Pest & Disease Reporting System
----
+## 📘 User Stories : USSD/SMS-Based Pest & Disease Reporting System
 
 ## 👨🏾‍🌾 Farmers (End Users)
 
@@ -78,7 +77,7 @@
 23. **Report Trends Visualization**  
    As an officer, I want to view map-based trends of reported cases so that I can quickly identify outbreak zones.
 
-## USSD Pest & Disease Reporting - Sequence Diagram
+## High-Level Overview - Sequence Diagram
 
 ```mermaid
 sequenceDiagram
@@ -107,7 +106,7 @@ The significance of the sequence diagram is that it
 - Helps developers map each step to code functions or endpoints.
 - Highlights user input steps and automated responses.
 
-## USSD Pest & Disease Reporting - Expanded Sequence Diagram
+## Expanded Overview Detail Sequence Diagram
 
 ```mermaid
 sequenceDiagram
@@ -142,7 +141,7 @@ sequenceDiagram
     NodeServer->>DB: Save Report (phone, crop, symptoms, timestamp)
     NodeServer->>DB: Log USSD session
 
-    NodeServer->>NodeServer: Analyze severity level
+    NodeServer->>NodeServer: Analyse severity level
     alt Severe Case
         NodeServer->>Escalation: Forward report for review
         Escalation->>Farmer: SMS follow-up for urgent cases
